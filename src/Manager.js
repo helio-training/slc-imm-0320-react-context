@@ -6,8 +6,9 @@ export default class extends Component {
     render() {
         return (
           <ThemeContext.Consumer>
-            {({ contextData }) => (
-              <div>
+            {({ contextData, theme }) => (
+              <div
+                style={{ backgroundColor: theme.background, color: theme.foreground }}>
                 <div>{contextData}</div>
                 <p>{console.log(contextData)}</p>
               </div>

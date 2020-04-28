@@ -5,8 +5,8 @@ export default class extends Component {
     state = {}
 
     handleBtnClick = (contextFunc) => {
-        let total = '$5000'
-        contextFunc(total)
+        let total = Math.random() * 10000;
+        contextFunc(total);
     }
     render() {
         return (
